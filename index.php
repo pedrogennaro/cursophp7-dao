@@ -35,8 +35,39 @@ require_once("config.php");
 //======================================================
 //Carrega um usuário usando o login e a senha
 
+//$usuario = new Usuario();
+//$usuario->login("root", "!@#$");
+
+//echo $usuario;
+
+//======================================================
+//Insere um novo usuário sem método construtor
+
+//$aluno = new Usuario();
+//$aluno->setDeslogin("aluno");
+//$aluno->setDessenha("@lun0");
+
+//$aluno->insert();
+
+//echo $aluno;
+
+//======================================================
+//Insere um novo usuário com método construtor
+
+//$aluno = new Usuario("aluno", "@lun0");
+
+//$aluno->insert();
+
+//echo $aluno;
+
+//======================================================
+//Alterando um usuário
+
 $usuario = new Usuario();
-$usuario->login("root", "!@#$");
+$usuario->loadById(8);
+
+$usuario->update("professor", "dosajg");
 
 echo $usuario;
+
  ?>
