@@ -63,11 +63,21 @@ require_once("config.php");
 //======================================================
 //Alterando um usuário
 
-$usuario = new Usuario();
-$usuario->loadById(8);
+//$usuario = new Usuario();
+//$usuario->loadById(8);
 
-$usuario->update("professor", "dosajg");
+//$usuario->update("professor", "dosajg");
 
-echo $usuario;
+//echo $usuario;
+
+//======================================================
+//Excluindo um usuário
+
+//$usuario = new Usuario();
+//$usuario->loadById(4);
+
+//$usuario->delete();
+
+//echo $usuario;
 
  ?>
